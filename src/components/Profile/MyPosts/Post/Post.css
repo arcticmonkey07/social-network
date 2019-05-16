@@ -1,0 +1,46 @@
+.post {
+  margin: 10px;
+}
+.post {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px 10px 20px;
+  border: 3px solid #BECF81;
+  border-radius: 10px;
+  background-color: #D4CFCF;
+}
+
+.post__img {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px 20px 0;
+  border-radius: 50%;
+}
+
+.post__text {
+  flex-basis: 85%;
+}
+
+.post__like {
+  display: inline;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  padding: 0;
+  border: none;
+  background-color: #D4CFCF;
+  cursor: pointer;
+}
+
+.post__like-count {
+  display: inline-block;
+  padding-top: 8px;
+}
+
+.post__svg:hover {
+  fill: #99A669;
+}
+
+.post__svg:active {
+  fill: #737D4E;
+}

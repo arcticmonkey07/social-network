@@ -1,0 +1,30 @@
+.app__nav {
+  grid-area: n;
+  background-color: #BECF81;
+}
+
+.nav_list {
+  list-style: none;
+}
+
+.nav__link {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #D7D7D7;
+}
+
+.nav__link:active {
+  color: #B7B7B7;
+}
+
+.nav__active {
+  color: #9A75F4;
+}
+
+.nav__active:hover {
+  color: #9A75F4;
+}

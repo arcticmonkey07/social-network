@@ -1,0 +1,37 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogs__names-list {
+  list-style: none;
+}
+
+.dialogs__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dialogs__link:hover {
+  color: #D7D7D7;
+}
+
+.dialogs__link:active {
+  color: #B7B7B7;
+}
+
+.dialogs__active {
+  color: #C4B2EF;
+}
+
+.dialogs__active:hover {
+  color: #C4B2EF;
+}
+
+.dialogs__messages-list {
+  list-style: none;
+}
+
+.dialogs__message {
+
+}

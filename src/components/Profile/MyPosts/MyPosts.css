@@ -1,0 +1,32 @@
+.myposts__textarea {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  padding: 10px; 
+  border: 3px solid #BECF81;
+  border-radius: 10px;
+  font-weight: 600; 
+}
+
+.myposts__button {
+  margin: 5px 0 20px 20px;
+  padding: 5px 30px;
+  font-weight: 700; 
+  border: 3px solid #CADC88;
+  border-radius: 20px;
+  background-color: #BECF81;
+  text-transform: uppercase;
+  color: #3D422C;
+  cursor: pointer;
+}
+
+.myposts__button:hover {
+  background-color: #CADC8B;
+  color: #222518;
+}
+
+.myposts__button:active {
+  background-color: #A8B771;
+  color: #010101;
+}
