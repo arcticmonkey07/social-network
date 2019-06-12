@@ -16,9 +16,18 @@ export const usersAPI = {
         });
   },
   follow(uderId) {
-    return instance.post(`https://social-network.samuraijs.com/api/1.0/follow/${uderId.id}`)
+    return instance.post(`follow/${uderId.id}`)
   },
   unfollow(uderId) {
-    return instance.delete(`https://social-network.samuraijs.com/api/1.0/follow/${uderId.id}`)
+    return instance.delete(`follow/${uderId.id}`)
+  },
+  getProfile(userId) {
+    return instance.get(`profile/` + userId)
+  }
+}
+
+export const authAPI = {
+  me() {
+    return instance.get(`auth/me`)
   }
 }
