@@ -2,3 +2,22 @@
   grid-area: h;
   background-color: green;
 }
+
+.header {
+  display: flex;
+}
+
+.header__login {
+  margin: 10px;
+  margin-left: auto;
+  color: #fff;
+}
+
+.header__login-link {
+  color: #fff;
+}
+
+.header__login-link:hover {
+  color: #8392ff;
+  text-decoration: none;
+}

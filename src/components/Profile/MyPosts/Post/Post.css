@@ -30,6 +30,7 @@
   border: none;
   background-color: #D4CFCF;
   cursor: pointer;
+  outline: none;
 }
 
 .post__like-count {

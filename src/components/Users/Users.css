@@ -1,0 +1,62 @@
+.users {
+  padding: 20px;
+}
+
+.users__wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.users__avatar-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 96px;
+  margin-right: 10px;
+}
+
+.users__button {
+  cursor: pointer;
+}
+
+.users__description-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.users__name-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.users__name {
+  margin: 0;
+}
+
+.users__status {
+  margin: 0;
+  margin-top: auto;
+}
+
+.users__counrty-wrapper {
+  margin-left: auto;
+}
+
+.users__country {
+  margin: 5px 0;
+}
+
+.users__city {
+  margin: 0;
+}
+
+.selectedPage {
+  font-weight: 700;
+}
+
+span {
+  margin: 5px;
+  cursor: pointer;
+}

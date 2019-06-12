@@ -5,13 +5,12 @@ import './MyPosts.css'
 const MyPosts = (props) => {
 
   let postsElements = 
-    props.posts.map( p => <Post message={p.message} likesCount={p.likesCount} /> );
+    props.posts.map( p => <Post message={p.message} likesCount={p.likesCount} key={p.id} /> );
 
   let newPostElement = React.createRef();
 
-  let addPost = () => {
+  let onAddPost = () => {
     props.addPost();
-    props.updateNewPostText('');
   }
 
   let onPostChange = () => {
@@ -22,7 +21,7 @@ const MyPosts = (props) => {
   return (
       <section className="myposts">
         <textarea className="myposts__textarea" onChange={ onPostChange } value={props.newPostText} ref={ newPostElement } />
-        <button className="myposts__button" onClick={ addPost }>Add Post</button>
+        <button className="myposts__button" onClick={ onAddPost }>Add Post</button>
         { postsElements }
       </section>
     )
