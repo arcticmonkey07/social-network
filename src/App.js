@@ -6,6 +6,7 @@ import DialogsConrainer from './components/Dialogs/DialogsConrainer.jsx';
 import UsersContainer from './components/Users/UsersContainer.jsx';
 import {Route} from 'react-router-dom';
 import ProfileContainer from "./components/Profile/ProfileContainer.jsx";
+import LoginPage from "./components/Login/Login.jsx";
 
 const App = (props) => {
   return (
@@ -18,8 +19,12 @@ const App = (props) => {
 
         <Route path="/profile/:userId?"
                render={ () => <ProfileContainer /> } />
+
         <Route path="/users" 
                render={ () => <UsersContainer /> } />
+
+        <Route path="/login"
+               render={ () => <LoginPage /> } />
       </div>
     </div>
   );
