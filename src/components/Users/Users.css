@@ -1,5 +1,10 @@
 .users {
+  width: 950px;
   padding: 20px;
+}
+
+.users__pages {
+  display: flex;
 }
 
 .users__wrapper {
