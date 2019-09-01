@@ -1,6 +1,10 @@
 import React from 'react';
 import './Login.css';
 import {Field, reduxForm} from "redux-form";
+import {Input} from "../common/FormsControls/FormsControls";
+import {maxLengthCreator, required} from "../../utils/validators/validators";
+
+const maxLength10 = maxLengthCreator(10);
 
 const LoginForm = (props) => {
   return (
@@ -10,20 +14,23 @@ const LoginForm = (props) => {
         name={'login'}
         className='form__input'
         placeholder={'Login'}
-        component={'input'}
+        component={Input}
+        validate={[required, maxLength10]}
       />
       <Field
         type="text"
         name={'password'}
         className='form__input'
         placeholder={'Password'}
-        component={'input'}
+        component={Input}
+        validate={[required, maxLength10]}
       />
       <label className='form__input'>
         <Field
           type="checkbox"
           name={'rememberMe'}
-          component={'input'}
+          component={Input}
+          validate={[required, maxLength10]}
         />Remember me
       </label>
       <button className='form__sumbit'>Login</button>

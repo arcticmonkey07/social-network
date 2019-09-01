@@ -1,0 +1,10 @@
+.form__error textarea,
+.form__error input {
+  border: 2px solid red;
+}
+
+.form__span {
+  display: block;
+  margin: 10px 0 10px 20px;
+  color: red;
+}
