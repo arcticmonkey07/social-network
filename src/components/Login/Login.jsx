@@ -36,6 +36,9 @@ const LoginForm = (props) => {
           validate={[required, maxLength30]}
         />Remember me
       </label>
+      <div className='form__error'>
+        {props.error}
+      </div>
       <button className='form__sumbit'>Login</button>
     </form>
   )
