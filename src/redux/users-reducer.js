@@ -10,7 +10,7 @@ const TOGGLE_IS_FOLLOWING_PROGRESS = 'TOGGLE_IS_FOLLOWING_PROGRESS';
 
 let initialState = {
   users: [],
-  pageSize: 5,
+  pageSize: 20,
   totalUsersCount: 0,
   currentPage: 3,
   isFetching: false,
@@ -28,7 +28,7 @@ const usersReducer = (state = initialState, action) => {
           }
           return u;
         })
-      }
+      };
     case UNFOLLOW:
       return {
         ...state,
@@ -38,7 +38,7 @@ const usersReducer = (state = initialState, action) => {
           }
           return u;
         })
-      }
+      };
     case SET_USERS: {
       return {...state, users: action.users}
     }
@@ -62,7 +62,7 @@ const usersReducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export const followSuccess = (userId) => ({type: FOLLOW, userId})
 export const unfollowSuccess = (userId) => ({type: UNFOLLOW, userId})
@@ -74,7 +74,7 @@ export const toggleFollowingProgress = (isFetching, userId) => ({
   type: TOGGLE_IS_FOLLOWING_PROGRESS,
   isFetching,
   userId
-})
+});
 
 export const getUsers = (currentPage, pageSize) => {
   return (dispatch) => {
@@ -86,7 +86,7 @@ export const getUsers = (currentPage, pageSize) => {
       dispatch(setTotalUsersCount(data.totalCount));
     });
   }
-}
+};
 
 export const follow = (userId) => {
   return (dispatch) => {
@@ -99,7 +99,7 @@ export const follow = (userId) => {
         dispatch(toggleFollowingProgress(false, userId));
       });
   }
-}
+};
 
 export const unfollow = (userId) => {
   return (dispatch) => {
@@ -112,6 +112,6 @@ export const unfollow = (userId) => {
           dispatch(toggleFollowingProgress(false, userId));
         });
   }
-}
+};
 
 export default usersReducer;
