@@ -3,6 +3,7 @@ import './ProfileInfo.css'
 import Preloader from "../common/preloader/preloader.js";
 import avatar from '../../assets/images/avatar.png';
 import ProfileStatus from './ProfileStatus';
+import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 const ProfileInfo = (props) => {
   if (!props.profile) {
@@ -12,7 +13,7 @@ const ProfileInfo = (props) => {
       <div className="profileinfo">
         <section>
           { props.profile.photos.large ? <img src={props.profile.photos.large} alt="avatar"/> : <img src={avatar} alt="avatar"/> }
-          <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+          <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
           <h3>{props.profile.fullName}</h3>
           <p>{props.profile.aboutMe}</p>
           {props.profile.lookingForAJob ? <p>Ищу работу</p> : <p>Не ищу работу</p>}
