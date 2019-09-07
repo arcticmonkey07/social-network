@@ -5,23 +5,6 @@ import {Field, reduxForm} from "redux-form";
 import {required, maxLengthCreator} from '../../../utils/validators/validators.js';
 import {Textarea} from "../../common/FormsControls/FormsControls";
 
-const MyPosts = (props) => {
-
-  let postsElements = 
-    props.posts.map( p => <Post message={p.message} likesCount={p.likesCount} key={p.id} /> );
-
-  let addAddPost = (values) => {
-    props.addPost(values.newPostText);
-  };
-
-  return (
-      <section className="myposts">
-        <AddNewPostFormRedux onSubmit={addAddPost}/>
-        { postsElements }
-      </section>
-    )
-}
-
 const maxLength10 = maxLengthCreator(10);
 
 const AddNewPostForm = (props) => {
@@ -37,8 +20,32 @@ const AddNewPostForm = (props) => {
       <button className='myposts__button'>Add Post</button>
     </form>
   )
-}
+};
 
 const AddNewPostFormRedux = reduxForm({form: 'ProfileAddNewPostForm'})(AddNewPostForm);
+
+
+class MyPosts extends React.Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return nextProps !== this.props || nextState !== this.state;
+  }
+
+  render() {
+    console.log('render');
+    let postsElements =
+      this.props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} key={p.id}/>);
+
+    let addAddPost = (values) => {
+      this.props.addPost(values.newPostText);
+    };
+
+    return (
+      <section className="myposts">
+        <AddNewPostFormRedux onSubmit={addAddPost}/>
+        {postsElements}
+      </section>
+    )
+  }
+}
 
 export default MyPosts;
