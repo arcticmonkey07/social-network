@@ -9,9 +9,9 @@ import {Redirect} from "react-router-dom";
 
 const maxLength30 = maxLengthCreator(30);
 
-const LoginForm = (props) => {
+const LoginForm = ({handleSubmit, error}) => {
   return (
-    <form onSubmit={props.handleSubmit} className='login__form form'>
+    <form onSubmit={handleSubmit} className='login__form form'>
       <Field
         type="text"
         name={'email'}
@@ -33,23 +33,22 @@ const LoginForm = (props) => {
           type="checkbox"
           name={'rememberMe'}
           component={Input}
-          validate={[required, maxLength30]}
         />Remember me
       </label>
       <div className='form__error'>
-        {props.error}
+        {error}
       </div>
       <button className='form__sumbit'>Login</button>
     </form>
   )
-}
+};
 
 const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
 
 const Login = (props) => {
   const onSubmit = (formData) => {
     props.login(formData.email, formData.password, formData.rememberMe);
-  }
+  };
 
   if (props.isAuth) {
     return <Redirect to={'/profile'} />
@@ -61,10 +60,10 @@ const Login = (props) => {
       <LoginReduxForm onSubmit={onSubmit}/>
     </div>
   )
-}
+};
 
 const mapStateToProps = (state) => ({
   isAuth: state.auth.isAuth
-})
+});
 
 export default connect(mapStateToProps, {login} )(Login);

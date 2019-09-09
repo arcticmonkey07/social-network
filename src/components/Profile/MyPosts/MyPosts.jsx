@@ -31,7 +31,6 @@ class MyPosts extends React.Component {
   }
 
   render() {
-    console.log('render');
     let postsElements =
       this.props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} key={p.id}/>);
 

@@ -3,11 +3,7 @@
   padding: 20px;
 }
 
-.users__pages {
-  display: flex;
-}
-
-.users__wrapper {
+.users__item {
   display: flex;
   margin-bottom: 20px;
 }
@@ -55,10 +51,6 @@
 
 .users__city {
   margin: 0;
-}
-
-.selectedPage {
-  font-weight: 700;
 }
 
 span {

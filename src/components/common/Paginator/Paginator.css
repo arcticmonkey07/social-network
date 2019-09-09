@@ -1,0 +1,7 @@
+.paginator__pages {
+  display: flex;
+}
+
+.paginator__selected-page {
+  font-weight: 700;
+}
