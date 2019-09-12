@@ -1,0 +1,19 @@
+.profile__status {
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.profile__status:hover {
+  background-color: #EDEEF0;
+}
+
+.profile__status-show {
+  display: block;
+  margin: 0;
+  color: #000;
+}
+
+.profile__no-status {
+  margin: 0;
+  color: #939393;
+}

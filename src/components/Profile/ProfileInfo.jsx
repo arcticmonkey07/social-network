@@ -9,26 +9,39 @@ const ProfileInfo = ({profile, status, updateStatus}) => {
     return <Preloader/>
   }
   return (
-      <div className="profileinfo">
-        <section>
-          { profile.photos.large ? <img src={profile.photos.large} alt="avatar"/> : <img src={avatar} alt="avatar"/> }
-          <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
-          <h3>{profile.fullName}</h3>
-          <p>{profile.aboutMe}</p>
-          {profile.lookingForAJob ? <p>Ищу работу</p> : <p>Не ищу работу</p>}
-          <p>{profile.lookingForAJobDescription}</p>
-          <ul>
-            { profile.contacts.facebook ? <li>{profile.contacts.facebook}</li> : <div></div>}
-            { profile.contacts.website ? <li>{profile.contacts.website}</li> : <div></div>}
-            { profile.contacts.vk ? <li>{profile.contacts.vk}</li> : <div></div>}
-            { profile.contacts.twitter ? <li>{profile.contacts.twitter}</li> : <div></div>}
-            { profile.contacts.instagram ? <li>{profile.contacts.instagram}</li> : <div></div>}
-            { profile.contacts.youtube ? <li>{profile.contacts.youtube}</li> : <div></div>}
-            { profile.contacts.github ? <li>{profile.contacts.github}</li> : <div></div>}
-            { profile.contacts.mainLink ? <li>{profile.contacts.mainLink}</li> : <div></div>}
-          </ul>
-        </section>
-      </div>
+      <section className="profile__info info">
+        <div className='info__avatar'>
+          { profile.photos.large ? <img src={profile.photos.large} className='info__avatar-img' alt="avatar"/> : <img src={avatar} className='info__avatar-img' alt="avatar"/> }
+        </div>
+        <div className='info__description'>
+          <div className='info__description-top'>
+            <h3 className='info__name'>{profile.fullName}</h3>
+            <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
+          </div>
+          <div className='info__sections'>
+            <p className='info__info-headers'>Обо мне:</p>
+            <p className='info__info-answers'>{profile.aboutMe}</p>
+          </div>
+          <div className='info__sections'>
+            <p className='info__info-headers'>Работа:</p>
+            {profile.lookingForAJob ? <p className='info__info-answers'>Ищу работу</p> : <p className='info__info-answers'>Не ищу работу</p>}
+          </div>
+          <div className='info__sections'>
+            <p className='info__info-headers'>О работе:</p>
+            <p className='info__info-answers'>{profile.lookingForAJobDescription}</p>
+          </div>
+          <div className='info__social'>
+            { profile.contacts.facebook ? <a className='info__link' href={profile.contacts.facebook}>{profile.contacts.facebook}</a> : <></>}
+            { profile.contacts.website ? <a className='info__link' href={profile.contacts.website}>{profile.contacts.website}</a> : <></>}
+            { profile.contacts.vk ? <a className='info__link' href={profile.contacts.vk}>{profile.contacts.vk}</a> : <></>}
+            { profile.contacts.twitter ? <a className='info__link' href={profile.contacts.twitter}>{profile.contacts.twitter}</a> : <></>}
+            { profile.contacts.instagram ? <a className='info__link' href={profile.contacts.instagram}>{profile.contacts.instagram}</a> : <></>}
+            { profile.contacts.youtube ? <a className='info__link' href={profile.contacts.youtube}>{profile.contacts.youtube}</a> : <></>}
+            { profile.contacts.github ? <a className='info__link' href={profile.contacts.github}>{profile.contacts.github}</a> : <></>}
+            { profile.contacts.mainLink ? <a className='info__link' href={profile.contacts.mainLink}>{profile.contacts.mainLink}</a> : <></>}
+          </div>
+        </div>
+      </section>
     )
 }
 

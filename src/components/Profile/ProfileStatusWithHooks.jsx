@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import './ProfileStatus.css';
 
 const ProfileStatusWithHooks = (props) => {
 
@@ -18,21 +19,38 @@ const ProfileStatusWithHooks = (props) => {
     props.updateStatus(status);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      setEditMode(false);
+      props.updateStatus(status);
+    }
+  };
+
   const onStatusChange = (e) => {
     setStatus(e.currentTarget.value);
   };
 
+  const noStatus = () => {
+    return <span className='profile__no-status'>изменить статус</span>
+  };
+
   return (
-    <div>
+    <div className="profile__status">
       { !editMode &&
-        <div className="profile__status">
-          <span onDoubleClick={activateEditMode}>{props.status || 'no status'}</span>
-        </div>
+        <span
+          onClick={activateEditMode}
+          className='profile__status-show'
+        >{props.status || noStatus()}</span>
       }
       {editMode &&
-        <div>
-          <input onChange={onStatusChange} onBlur={deActivateEditMode} value={status} autoFocus={true} />
-        </div>
+        <input
+          onKeyDown={handleKeyDown}
+          onChange={onStatusChange}
+          onBlur={deActivateEditMode}
+          value={status}
+          autoFocus={true}
+          className='profile__status-input'
+        />
       }
       </div>
     )

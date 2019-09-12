@@ -1,32 +1,52 @@
-.myposts__textarea {
+.posts {
+  width: 580px;
+  margin-left: auto;
+}
+
+.posts__send {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  background-color: #fff;
+}
+
+.posts__textarea {
   display: block;
-  width: 200px;
+  width: 530px;
   height: 50px;
-  margin-left: 20px;
-  padding: 10px; 
-  border: 3px solid #BECF81;
-  border-radius: 10px;
-  font-weight: 600; 
+  margin-bottom: 10px;
+  padding: 0 10px 10px 10px;
+  border: none;
+  border-bottom: 1px solid #e7e8ec;
+  outline: none;
 }
 
-.myposts__button {
-  margin: 5px 0 20px 20px;
-  padding: 5px 30px;
-  font-weight: 700; 
-  border: 3px solid #CADC88;
-  border-radius: 20px;
-  background-color: #BECF81;
-  text-transform: uppercase;
-  color: #3D422C;
+.posts__textarea:focus {
+  border-bottom: 1px solid #4a76a8;
+}
+
+.posts__button {
+  display: inline-block;
+  margin: 0;
+  padding: 7px 16px 8px;
+  background-color: #5181b8;
   cursor: pointer;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.myposts__button:hover {
-  background-color: #CADC8B;
-  color: #222518;
+.posts__button:hover {
+  background-color: #5b88bd;
 }
 
-.myposts__button:active {
-  background-color: #A8B771;
-  color: #010101;
+.posts__button:active {
+  padding-top: 8px;
+  padding-bottom: 7px;
+  background-color: #4872a3;
 }

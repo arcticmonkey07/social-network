@@ -1,23 +1,69 @@
-.app__header {
-  grid-area: h;
-  background-color: green;
+.header__container {
+  width: 100%;
+  background-color: #4a76a8;
 }
 
 .header {
   display: flex;
+  width: 960px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #4a76a8;
+}
+
+.header__logo {
+  position: relative;
+  left: -5px;
+  height: 40px;
+  margin-top: 10px;
 }
 
 .header__login {
-  margin: 10px;
   margin-left: auto;
   color: #fff;
 }
 
-.header__login-link {
-  color: #fff;
+.login {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
 }
 
-.header__login-link:hover {
-  color: #8392ff;
+.login__avatar {
+  width: 48px;
+  height: 48px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.login__button {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  padding: 7px 16px 8px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
   text-decoration: none;
+  color: #000;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login__button:hover {
+  background-color: #5fa6df;
+}
+
+.login__button:active {
+  padding-top: 8px;
+  padding-bottom: 7px;
+  color: #fff;
+  background-color: #4c89be;
+}
+
+.login__button--exit {
+  margin-top: 12px;
 }

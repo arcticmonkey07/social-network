@@ -1,8 +1,64 @@
-.profileinfo {
-  margin-bottom: 20px;
-  padding: 20px;
+.info {
+  display: flex;
+  margin-bottom: 15px;
 }
 
-.profileinfo__img {
-  width: 100%;
+.info__avatar {
+  display: flex;
+  width: 200px;
+  height: 300px;
+  margin-right: 15px;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  background-color: #fff;
+}
+
+.info__avatar-img {
+  width: 200px;
+  height: 300px;
+  margin: auto;
+}
+
+.info__description {
+  width: 540px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  background-color: #fff;
+}
+
+.info__name {
+  margin: 0;
+}
+
+.info__description-top {
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e7e8ec;
+}
+
+.info__sections {
+  display: flex;
+}
+
+.info__info-headers {
+  width: 165px;
+  margin: 5px 0;
+  color: #828282;
+}
+
+.info__info-answers {
+  width: 375px;
+  margin: 5px 0;
+}
+
+.info__job-description {
+  width: 375px;
+  margin: 5px 0 5px 10px;
+}
+
+.info__link {
+  display: block;
+  margin-bottom: 5px;
 }

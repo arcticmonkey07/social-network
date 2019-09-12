@@ -2,28 +2,26 @@ import React from 'react';
 import Post from './Post/Post.jsx'
 import './MyPosts.css'
 import {Field, reduxForm} from "redux-form";
-import {required, maxLengthCreator} from '../../../utils/validators/validators.js';
 import {Textarea} from "../../common/FormsControls/FormsControls";
-
-const maxLength10 = maxLengthCreator(10);
 
 const AddNewPostForm = (props) => {
   return (
-    <form onSubmit={props.handleSubmit}>
+    <form
+      onSubmit={props.handleSubmit}
+      className='posts__send'
+    >
       <Field
         component={Textarea}
         name='newPostText'
-        className='myposts__textarea'
-        placeholder='Sample Text'
-        validate={[required, maxLength10]}
+        className='posts__textarea'
+        placeholder='Что у Вас нового?'
       />
-      <button className='myposts__button'>Add Post</button>
+      <button className='posts__button'>Опубликовать</button>
     </form>
   )
 };
 
 const AddNewPostFormRedux = reduxForm({form: 'ProfileAddNewPostForm'})(AddNewPostForm);
-
 
 class MyPosts extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -39,7 +37,7 @@ class MyPosts extends React.Component {
     };
 
     return (
-      <section className="myposts">
+      <section className="posts">
         <AddNewPostFormRedux onSubmit={addAddPost}/>
         {postsElements}
       </section>

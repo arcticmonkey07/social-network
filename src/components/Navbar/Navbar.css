@@ -1,15 +1,22 @@
-.app__nav {
-  grid-area: n;
-  background-color: #BECF81;
+.nav {
+  width: 150px;
+  margin-right: 15px;
+  background-color: #EDEEF0;
 }
 
 .nav_list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.nav__item {
+  height: 28px;
+}
+
 .nav__link {
-  font-size: 20px;
-  color: #fff;
+  font-size: 16px;
+  color: #285473;
   text-decoration: none;
 }
 

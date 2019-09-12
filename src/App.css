@@ -1,16 +1,14 @@
-.app__wrapper {
-  display: grid;
-  grid-template-areas: 
-    "h h"
-    "n c";
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
-  width: 1200px;
+.app__main {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
   margin: 0 auto;
+  margin-top: 15px;
+  padding: 0 15px;
+  background-color: #EDEEF0;
 }
 
 .app__content {
-  grid-area: c;
-  background-color: #7098C6;
+  width: 825px;
+  background-color: #EDEEF0;
 }
