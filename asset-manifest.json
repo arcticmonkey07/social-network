@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/arcticmonkey07/social-network/static/css/main.8f4be0fb.chunk.css",
+    "main.js": "/arcticmonkey07/social-network/static/js/main.c7592924.chunk.js",
+    "main.js.map": "/arcticmonkey07/social-network/static/js/main.c7592924.chunk.js.map",
+    "runtime~main.js": "/arcticmonkey07/social-network/static/js/runtime~main.8fc8e5d3.js",
+    "runtime~main.js.map": "/arcticmonkey07/social-network/static/js/runtime~main.8fc8e5d3.js.map",
+    "static/js/2.aa9261a8.chunk.js": "/arcticmonkey07/social-network/static/js/2.aa9261a8.chunk.js",
+    "static/js/2.aa9261a8.chunk.js.map": "/arcticmonkey07/social-network/static/js/2.aa9261a8.chunk.js.map",
+    "static/css/3.9887b38b.chunk.css": "/arcticmonkey07/social-network/static/css/3.9887b38b.chunk.css",
+    "static/js/3.5c3e21c7.chunk.js": "/arcticmonkey07/social-network/static/js/3.5c3e21c7.chunk.js",
+    "static/js/3.5c3e21c7.chunk.js.map": "/arcticmonkey07/social-network/static/js/3.5c3e21c7.chunk.js.map",
+    "static/css/4.826fe40b.chunk.css": "/arcticmonkey07/social-network/static/css/4.826fe40b.chunk.css",
+    "static/js/4.c22f96a1.chunk.js": "/arcticmonkey07/social-network/static/js/4.c22f96a1.chunk.js",
+    "static/js/4.c22f96a1.chunk.js.map": "/arcticmonkey07/social-network/static/js/4.c22f96a1.chunk.js.map",
+    "static/css/5.d8abdb7b.chunk.css": "/arcticmonkey07/social-network/static/css/5.d8abdb7b.chunk.css",
+    "static/js/5.5c0d5c1a.chunk.js": "/arcticmonkey07/social-network/static/js/5.5c0d5c1a.chunk.js",
+    "static/js/5.5c0d5c1a.chunk.js.map": "/arcticmonkey07/social-network/static/js/5.5c0d5c1a.chunk.js.map",
+    "index.html": "/arcticmonkey07/social-network/index.html",
+    "precache-manifest.ce50939dc4e85260f18848408234bf82.js": "/arcticmonkey07/social-network/precache-manifest.ce50939dc4e85260f18848408234bf82.js",
+    "service-worker.js": "/arcticmonkey07/social-network/service-worker.js",
+    "static/css/3.9887b38b.chunk.css.map": "/arcticmonkey07/social-network/static/css/3.9887b38b.chunk.css.map",
+    "static/css/4.826fe40b.chunk.css.map": "/arcticmonkey07/social-network/static/css/4.826fe40b.chunk.css.map",
+    "static/css/5.d8abdb7b.chunk.css.map": "/arcticmonkey07/social-network/static/css/5.d8abdb7b.chunk.css.map",
+    "static/css/main.8f4be0fb.chunk.css.map": "/arcticmonkey07/social-network/static/css/main.8f4be0fb.chunk.css.map",
+    "static/media/ava.jpg": "/arcticmonkey07/social-network/static/media/ava.9eb9da42.jpg",
+    "static/media/preloader.svg": "/arcticmonkey07/social-network/static/media/preloader.16d14331.svg",
+    "static/media/share.svg": "/arcticmonkey07/social-network/static/media/share.02c5d697.svg"
+  }
+}
