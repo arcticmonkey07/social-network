@@ -1,0 +1,33 @@
+.dialog {
+  display: flex;
+  padding-top: 11px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7e8ec;
+}
+
+.dialog:hover {
+  background-color: #EDEEF0;
+  cursor: pointer;
+}
+
+.dialog__avatar {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.dialog__message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog__name {
+  margin: 3px 0 3px 0;
+  font-weight: 600;
+}
+
+.dialog__message {
+  margin: 10px 0 3px 0;
+}

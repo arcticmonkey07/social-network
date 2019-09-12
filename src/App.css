@@ -1,6 +1,5 @@
 .app__main {
   display: flex;
-  justify-content: space-between;
   width: 960px;
   margin: 0 auto;
   margin-top: 15px;
@@ -9,6 +8,5 @@
 }
 
 .app__content {
-  width: 825px;
   background-color: #EDEEF0;
 }

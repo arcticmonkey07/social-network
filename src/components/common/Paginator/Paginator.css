@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.paginator__pages span {
+  padding: 5px;
+}
+
 .paginator__selected-page {
   font-weight: 700;
 }

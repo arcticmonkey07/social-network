@@ -1,35 +1,55 @@
 .dialogs {
+  width: 550px;
+  margin-right: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  background-color: #fff;
 }
 
-.dialogs__names-list {
-  list-style: none;
+.new-message {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  background-color: #fff;
 }
 
-.dialogs__link {
-  color: #fff;
+.new-message__textarea {
+  display: block;
+  width: 510px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 0 10px 10px 10px;
+  border: none;
+  border-bottom: 1px solid #e7e8ec;
+  outline: none;
+}
+
+.new-message__textarea:focus {
+  border-bottom: 1px solid #4a76a8;
+}
+
+.new-message__button {
+  display: inline-block;
+  margin: 0;
+  padding: 7px 16px 8px;
+  background-color: #5181b8;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
   text-decoration: none;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.dialogs__link:hover {
-  color: #D7D7D7;
+.new-message__button:hover {
+  background-color: #5b88bd;
 }
 
-.dialogs__link:active {
-  color: #B7B7B7;
-}
-
-.dialogs__active {
-  color: #C4B2EF;
-}
-
-.dialogs__active:hover {
-  color: #C4B2EF;
-}
-
-.dialogs__messages-list {
-  list-style: none;
-}
-
-.dialogs__message {
-
+.new-message__button:active {
+  padding-top: 8px;
+  padding-bottom: 7px;
+  background-color: #4872a3;
 }

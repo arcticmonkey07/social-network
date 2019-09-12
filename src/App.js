@@ -53,7 +53,7 @@ const mapStateToProps = (state) => ({
 let AppContainer = compose( withRouter, connect(mapStateToProps, {initializeApp}) ) (App);
 
 const ContainerJSApp = (props) => {
-  return <BrowserRouter>
+  return <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Provider store={store}>
             <AppContainer/>
           </Provider>
