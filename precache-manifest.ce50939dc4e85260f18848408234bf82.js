@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e77679e480f72f403e07639ddd01428f",
+    "revision": "71c7182bc5a6d1a93a90bf9ec21fcecf",
     "url": "/arcticmonkey07/social-network/index.html"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/arcticmonkey07/social-network/static/css/5.d8abdb7b.chunk.css"
   },
   {
-    "revision": "e61babb9634cec93cf9c",
+    "revision": "226844ea225291a5533c",
     "url": "/arcticmonkey07/social-network/static/css/main.8f4be0fb.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/arcticmonkey07/social-network/static/js/5.5c0d5c1a.chunk.js"
   },
   {
-    "revision": "e61babb9634cec93cf9c",
-    "url": "/arcticmonkey07/social-network/static/js/main.6d4c8e10.chunk.js"
+    "revision": "226844ea225291a5533c",
+    "url": "/arcticmonkey07/social-network/static/js/main.c7592924.chunk.js"
   },
   {
     "revision": "3f31638e13af800893e7",
