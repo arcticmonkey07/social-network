@@ -5,6 +5,7 @@ const ADD_POST = 'ADD-POST';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
 const SET_STATUS = 'SET_STATUS';
 const DELETE_POST = 'DELETE_POST';
+const ADD_LIKE = 'ADD_LIKE';
 
 let initialState = {
   posts: [
@@ -25,7 +26,7 @@ const profileReducer = (state = initialState, action) => {
       };
       return {
         ...state,
-        posts: [...state.posts, newPost]
+        posts: [newPost, ...state.posts]
       };
     case SET_STATUS:
       return {
@@ -41,6 +42,10 @@ const profileReducer = (state = initialState, action) => {
       return {
           ...state,
         posts: state.posts.filter(p => p.id !== action.postId)
+      };
+    case ADD_LIKE:
+      return {
+        ...state
       };
     default:
       return state;
