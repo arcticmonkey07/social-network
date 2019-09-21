@@ -4,6 +4,7 @@
 }
 
 .info__avatar {
+  position: relative;
   display: flex;
   width: 200px;
   height: 300px;
@@ -12,6 +13,45 @@
   border-radius: 4px;
   box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
   background-color: #fff;
+}
+
+.info__avatar-change-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 230px;
+  height: 50px;
+  background-color: rgba(29,32,34,.7);
+}
+
+.info__avatar:hover .info__avatar-change-container {
+  display: flex;
+  animation: roll .2s linear;
+}
+
+@keyframes roll {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 50px;
+  }
+}
+
+.info__avatar-change-label {
+  margin: auto;
+  font-size: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.info__avatar-change-label:hover {
+  color: #5b88bd;
+}
+
+.info__avatar-change-label:active {
+  color: #4872a3;
 }
 
 .info__avatar-img {

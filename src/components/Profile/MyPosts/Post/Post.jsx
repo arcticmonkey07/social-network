@@ -2,7 +2,13 @@ import React from 'react';
 import ava from './../../../../img/ava.jpg';
 import './Post.css'
 
+if (process.env.NODE_ENV !== 'production') {
+  const whyDidYouRender = require('@welldone-software/why-did-you-render/dist/no-classes-transpile/umd/whyDidYouRender.min.js');
+  whyDidYouRender(React);
+}
+
 class Post extends React.Component {
+  static whyDidYouRender = true;
   state = {
     count: 0
   };

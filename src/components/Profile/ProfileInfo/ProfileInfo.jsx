@@ -1,17 +1,33 @@
 import React from 'react';
 import './ProfileInfo.css'
-import Preloader from "../common/preloader/preloader.js";
-import avatar from '../../assets/images/avatar.png';
+import Preloader from "../../common/preloader/preloader.js";
+import avatar from '../../../assets/images/avatar.png';
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
-const ProfileInfo = ({profile, status, updateStatus}) => {
+const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto}) => {
+
   if (!profile) {
     return <Preloader/>
   }
+
+  const onMainPhotoSelected = (e) => {
+    if (e.target.files.length) {
+      savePhoto(e.target.files[0]);
+    }
+  };
+
   return (
       <section className="profile__info info">
         <div className='info__avatar'>
           { profile.photos.large ? <img src={profile.photos.large} className='info__avatar-img' alt="avatar"/> : <img src={avatar} className='info__avatar-img' alt="avatar"/> }
+          {isOwner &&
+            <div className='info__avatar-change-container'>
+              <label className='info__avatar-change-label'>
+                Обновить фотографию
+                <input className='visually-hidden' onChange={onMainPhotoSelected} type="file"/>
+              </label>
+            </div>
+          }
         </div>
         <div className='info__description'>
           <div className='info__description-top'>
